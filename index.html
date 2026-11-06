@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>SALLY SKOUFIS™ — Warrior Soul</title>
-<meta name="description" content="SALLY SKOUFIS™ — Warrior Soul. A film, and a brief for retail partners.">
+<title>SALLY SKOUFIS™ — For marketplace partners</title>
+<meta name="description" content="SALLY SKOUFIS™ — Australian sculptural accessible-luxury jewellery. Runway, handmade, conscious. Already selling in America.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="SALLY SKOUFIS™ — Warrior Soul">
-<meta property="og:description" content="Sculptural accessible-luxury jewellery. Already selling in America. A one-minute film and brief for retail partners.">
+<meta property="og:title" content="SALLY SKOUFIS™ — Worn, not shown.">
+<meta property="og:description" content="An Australian icon. Runway-proven, handmade, conscious — and already selling in America. Explore the worlds.">
 <meta property="og:image" content="/og.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,6 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
+
 :root{--void:#0a0a0b;--ink:#141416;--line:rgba(242,242,240,.16);--stone:#8d8d92;--mist:#cfcfd2;--bone:#f2f2f0;--white:#fff;
   --serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost',Helvetica,Arial,sans-serif;
   --safe-b:env(safe-area-inset-bottom);--safe-t:env(safe-area-inset-top)}
@@ -187,64 +188,89 @@ body.inroom #hud,body.inroom #brand,body.inroom #skip{opacity:0!important;pointe
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 @keyframes breathe{from{transform:scale(1.06)}to{transform:scale(1.14)}}
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+body.lightw .wcard h2{color:#0a0a0b;text-shadow:none}body.lightw .wcard .k,body.lightw .wcard p{color:#3a3a3e;text-shadow:none}
+body.lightw .it .lbl{color:#3a3a3e}body.lightw #idx li{color:rgba(10,10,11,.4)}body.lightw #idx li.on{color:#0a0a0b}
+body.lightw #mark,body.lightw #toRoom2,body.lightw #depth .hint{color:#0a0a0b}body.lightw #depth .bar{background:rgba(10,10,11,.2)}body.lightw #depth .bar i{background:#0a0a0b}
+body.lightw .it img{box-shadow:0 20px 50px rgba(0,0,0,.18)}
+
+/* ================= WORLDS ================= */
+:root{--bg:#0a0a0b}
+html,body{background:var(--bg);transition:background-color 1.2s ease}
+#film{opacity:0;transition:opacity .8s}
+body.inroom #film{opacity:1}
+#grade{opacity:0}
+body.inroom #grade{opacity:1}
+#space{position:fixed;inset:0;perspective:900px;perspective-origin:50% 50%;overflow:hidden;touch-action:none;cursor:grab}
+#space:active{cursor:grabbing}
+.it{position:absolute;left:50%;top:50%;will-change:transform,opacity;opacity:0;pointer-events:none;backface-visibility:hidden}
+.it img,.it video{display:block;width:100%;height:auto;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.it.pic{border-radius:1px}
+.it.cap{pointer-events:none}
+.it .lbl{position:absolute;left:0;bottom:-1.6rem;font-size:.56rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mist);white-space:nowrap}
+.wcard{width:min(88vw,900px);text-align:center;padding:3rem 2rem}
+.wcard::before{content:"";position:absolute;inset:-12% -8%;background:radial-gradient(ellipse at center,rgba(5,5,6,.72) 0%,rgba(5,5,6,.45) 45%,rgba(5,5,6,0) 72%);z-index:-1;pointer-events:none}
+body.lightw .wcard::before{background:radial-gradient(ellipse at center,rgba(217,216,212,.9) 0%,rgba(217,216,212,.6) 45%,rgba(217,216,212,0) 72%)}
+.wcard .k{font-size:.62rem;letter-spacing:.46em;text-transform:uppercase;color:var(--mist);margin-bottom:1.2rem}
+.wcard h2{font-family:var(--serif);font-weight:300;font-size:clamp(2.6rem,6.8vw,5.8rem);line-height:1.02;color:#fff;text-shadow:0 4px 40px rgba(0,0,0,.6)}
+.wcard h2 em{font-style:italic}
+.wcard p{margin:1.3rem auto 0;max-width:32em;font-size:clamp(.92rem,1.5vw,1.06rem);line-height:1.7;color:var(--mist);text-shadow:0 2px 20px rgba(0,0,0,.8)}
+.wcard .names{font-family:var(--serif);font-style:italic;font-size:clamp(1.1rem,2.4vw,1.6rem);line-height:1.6;color:#fff;margin-top:1.2rem}
+.wcard .nums{display:flex;justify-content:center;gap:clamp(1.4rem,5vw,4rem);margin-top:1.8rem;flex-wrap:wrap}
+.wcard .nums b{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(2rem,4.6vw,3.6rem);line-height:1;color:#fff}
+.wcard .nums span{display:block;margin-top:.5rem;font-size:.56rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mist)}
+.wcard .go{pointer-events:auto;margin-top:2.2rem;display:inline-block;font-size:.66rem;letter-spacing:.4em;text-transform:uppercase;padding:1.1rem 2.4rem 1.1rem 2.8rem;background:var(--bone);color:var(--void);border:0;cursor:pointer}
+.wcard .go:hover{background:#fff}
+/* chrome */
+#idx{position:fixed;left:clamp(1rem,3vw,2.4rem);top:50%;transform:translateY(-50%);z-index:12;list-style:none;opacity:0;transition:opacity 1s}
+body.diving #idx{opacity:1}
+#idx li{display:flex;align-items:center;gap:.8rem;padding:.42rem 0;cursor:pointer;font-size:.56rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(242,242,240,.4);transition:color .4s}
+#idx li i{display:block;width:14px;height:1px;background:currentColor;transition:width .4s}
+#idx li.on{color:#fff}#idx li.on i{width:34px}
+#idx li:hover{color:var(--bone)}
+@media (max-width:760px){#idx li span{display:none}#idx{left:.8rem}}
+#mark{position:fixed;top:calc(1.4rem + var(--safe-t));left:0;right:0;text-align:center;z-index:12;font-family:var(--serif);letter-spacing:.38em;padding-left:.38em;font-size:.82rem;opacity:0;transition:opacity 1s;pointer-events:none}
+body.diving #mark{opacity:.95}
+#toRoom2{position:fixed;top:calc(1.2rem + var(--safe-t));right:clamp(1rem,3vw,2rem);z-index:13;font-size:.56rem;letter-spacing:.32em;text-transform:uppercase;color:var(--mist);padding:.5rem;opacity:0;transition:opacity 1s}
+body.diving #toRoom2{opacity:1}
+#toRoom2:hover{color:#fff}
+#depth{position:fixed;left:50%;bottom:calc(1.4rem + var(--safe-b));transform:translateX(-50%);z-index:12;width:min(60vw,420px);opacity:0;transition:opacity 1s;text-align:center}
+body.diving #depth{opacity:1}
+#depth .bar{height:1px;background:rgba(242,242,240,.18);position:relative}
+#depth .bar i{position:absolute;left:0;top:0;bottom:0;background:var(--bone);width:0}
+#depth .hint{margin-top:.8rem;font-size:.54rem;letter-spacing:.32em;text-transform:uppercase;color:rgba(242,242,240,.5)}
+body.inroom #space{opacity:0;pointer-events:none;transition:opacity .6s}
+body.inroom #idx,body.inroom #mark,body.inroom #toRoom2,body.inroom #depth{opacity:0!important;pointer-events:none}
+@media (max-width:640px){#mark{text-align:left;left:3.2rem;padding-left:0;letter-spacing:.28em;font-size:.7rem}}
+#splash .hint2{position:absolute;bottom:calc(2rem + var(--safe-b));font-size:.6rem;letter-spacing:.32em;text-transform:uppercase;color:var(--stone)}
 </style>
 </head>
 <body>
 
-<video id="film" src="film.mp4" poster="poster.jpg" muted playsinline preload="auto"></video>
+<video id="film" src="film.mp4" poster="poster.jpg" muted playsinline loop preload="metadata"></video>
 <div id="grade"></div>
 
 <!-- SPLASH -->
 <section id="splash">
-  <div class="bg"></div>
+  <div class="bg" style="background-image:url(w/nyfw-2.jpg);background-position:center 30%;filter:grayscale(.85) brightness(.32)"></div>
   <canvas id="ripple"></canvas>
   <div class="veil"></div>
   <div class="mark">SALLY SKOUFIS<sup>™</sup></div>
-  <div class="sub">Warrior Soul</div>
+  <div class="sub">Worn, not shown.</div>
   <button id="enter" type="button">Enter</button>
-  <div class="hint">Touch the water</div>
+  <div class="hint2">Touch the water · Explore at your own pace</div>
 </section>
 
-<div id="brand">SALLY SKOUFIS™</div>
-<button id="skip" type="button">For buyers →</button>
+<!-- WORLDS -->
+<div id="space" aria-label="Explore the worlds of SALLY SKOUFIS"></div>
+<ul id="idx"></ul>
+<div id="mark">SALLY SKOUFIS™</div>
+<button id="toRoom2" type="button">Partner room →</button>
+<div id="depth"><div class="bar"><i></i></div><div class="hint">Scroll · swipe · arrow keys — your pace</div></div>
 
-<div id="chap"><div class="num"></div><h2></h2><p></p><span class="piece"></span></div>
-
-<!-- LIGHT LINE -->
-<div id="hud">
-  <div id="line" aria-label="Move through the film from dark to light" role="slider" tabindex="0">
-    <div class="track"></div><div class="fill"></div><div class="knob"></div>
-  </div>
-  <div id="legend">
-    <span>Dark</span>
-    <span class="ctl"><button id="bPlay" type="button">Pause</button><button id="bReplay" type="button">Replay</button></span>
-    <span>Light</span>
-  </div>
-</div>
-
-<!-- END CARD -->
-<section id="end">
-  <div class="in">
-    <div class="kick">SALLY SKOUFIS™ · Accessible luxury · Australia → USA → Global</div>
-    <h2>Worn, not shown.<br><em>Ready for your floor.</em></h2>
-    <p class="lead">More than a decade in retail. Sculptural ear cuffs that bring her in; Warrior Soul and the black diamond that keep her.</p>
-    <div class="facts">
-      <div class="fact"><b>66K</b><span>US visitors · last 12 mo</span></div>
-      <div class="fact"><b>A$193K</b><span>US net sales · last 12 mo</span></div>
-      <div class="fact"><b>A$490</b><span>Avg US order · 2026</span></div>
-    </div>
-    <div class="btns">
-      <button class="btn solid" id="toRoom" type="button">For buyers →</button>
-      <a class="btn" href="linesheet.html">Line sheet</a>
-      <a class="btn" href="https://sallyskoufis.com" target="_blank" rel="noopener">sallyskoufis.com</a>
-      <button class="btn" id="again" type="button">Watch again</button>
-    </div>
-  </div>
-</section>
-
-<!-- BUYER ROOM -->
+<!-- PART 2 -->
 <section id="room" aria-label="For buyers">
-  <header><span class="m">SALLY SKOUFIS™</span><button id="backFilm" type="button">← The film</button></header>
+  <header><span class="m">SALLY SKOUFIS™</span><button id="backFilm" type="button">← The worlds</button></header>
   <nav id="tabs"></nav>
   <div id="panes">
 
@@ -349,55 +375,29 @@ body.inroom #hud,body.inroom #brand,body.inroom #skip{opacity:0!important;pointe
       </div>
     </div>
 
-    <div class="pane" data-tab="Start here">
-      <div class="kick">Low commitment · proven product</div>
-      <h3>Start small. <em>Scale what sells.</em></h3>
-      <div class="ranges edits">
-        <div class="rng">
-          <i>Test Edit</i>
-          <b>10 pieces</b>
-          <span class="role">Prove the brand with minimum risk. One tight story, easy to list, easy to sell through.</span>
-          <span class="row"><em>Built around</em>The Edge Ear Cuff + Core entry pieces, 3 Elevated bestsellers, 1 Queen Bee statement</span>
-        </div>
-        <div class="rng hero">
-          <i>Buyer's Edit · recommended</i>
-          <b>15 pieces</b>
-          <span class="role">A complete capsule you can merchandise as a proper brand moment, across ear, neck and hand.</span>
-          <span class="row"><em>Built around</em>9 Core bestsellers, 4 Elevated pieces, 2 Queen Bee statement pieces</span>
-        </div>
-        <div class="rng">
-          <i>Category Edit</i>
-          <b>25 pieces</b>
-          <span class="role">A shop-in-shop or full category presence. Positions us as a destination, not a line.</span>
-          <span class="row"><em>Built around</em>14 Core, 7 Elevated, 4 statement &amp; collectible pieces, including Warrior Soul</span>
-        </div>
-      </div>
-      <div class="src">Each edit tailored to your customer by your partnerships contact</div>
-    </div>
-
-    <div class="pane" data-tab="Working with us">
-      <div class="kick">Simple to onboard</div>
-      <h3>Already where <em>you buy.</em></h3>
+    <div class="pane" data-tab="How it works">
+      <div class="kick">Built for marketplaces</div>
+      <h3>Connected once. <em>Curated by us.</em></h3>
       <div class="terms">
-        <div><span>Channel</span><span>Mirakl Connect · direct wholesale</span></div>
+        <div><span>Channel</span><span>Mirakl Connect · API integration</span></div>
+        <div><span>Assortment</span><span>Allocated &amp; curated by SALLY SKOUFIS™</span></div>
+        <div><span>Catalogue</span><span>Imagery, attributes &amp; stock kept in sync</span></div>
+        <div><span>Merchandising</span><span>Led by proven US bestsellers</span></div>
         <div><span>Terms &amp; margin</span><span>Agreed with each partner</span></div>
         <div><span>Exclusivity</span><span>Non-exclusive</span></div>
-        
-        
-        <div><span>Lead time &amp; launch</span><span>Set with your partnerships contact</span></div>
+        <div><span>Fulfilment &amp; launch</span><span>Set with your partnerships contact</span></div>
         <div><span>Assets</span><span>Film, campaign &amp; product imagery supplied</span></div>
       </div>
-      <div class="src">Made by hand in Thailand · Opened shows at New York &amp; Paris Fashion Week · Worn by Rihanna, Naomi Campbell, Emma Myers, Kehlani, Bella Poarch</div>
+      <div class="src">More than a decade supplying MYER, Australia's largest department store — so our operations are proven, not experimental.</div>
     </div>
 
     <div class="pane contact" data-tab="Contact">
       <div class="kick">Partnerships</div>
-      <h3>Let's put the ear <em>on your floor.</em></h3>
+      <h3>Let's bring the ear <em>to your marketplace.</em></h3>
       <div class="who" id="who">Jordi<small id="role">Partnerships</small></div>
       <div class="mail" id="mail">partnership@sallyskoufis.com</div>
       <div class="btns">
-        <a class="btn solid" href="linesheet.html">View the Core line sheet</a>
-        <a class="btn" id="mailBtn" href="#">Request a call</a>
+        <a class="btn solid" id="mailBtn" href="#">Request a call</a>
         <a class="btn" href="https://sallyskoufis.com" target="_blank" rel="noopener">sallyskoufis.com</a>
       </div>
       <div class="sig">Sally Skoufis, Founder &amp; Designer</div>
@@ -408,111 +408,137 @@ body.inroom #hud,body.inroom #brand,body.inroom #skip{opacity:0!important;pointe
 </section>
 
 <script>
-/* ===== EDIT ME ===== */
-const CONTACT={name:'Jordi',title:'Partnerships',email:'partnership@sallyskoufis.com'}; // e.g. {name:'Jordi Smith',title:'Head of Partnerships',email:'partnerships@sallyskoufis.com'}
-const FILM_END=50; // seconds
-const CHAPTERS=[
-  {t:0,  n:'I · The dark',    h:'Every soul<br>has its <em>night.</em>', p:'Warrior Soul begins underwater, masked, in the dark. Most brands only show the light. We start here.', piece:'Warrior Soul · Headpiece'},
-  {t:8,  n:'II · The surface',h:'She doesn\'t wait<br><em>to be saved.</em>', p:'Death and rebirth cycles are part of every life. Warrior Soul is about rising through them, not avoiding them.', piece:''},
-  {t:14, n:'III · The armour',h:'Worn,<br><em>not shown.</em>', p:'Layered chains and black diamonds, worn close to the skin. Jewellery as armour for the soul, not decoration for the room.', piece:'Warrior Soul · Layered necklaces'},
-  {t:20, n:'IV · The ground', h:'Perfect, then<br><em>a little unfinished.</em>', p:'Hand chains, midi rings, an unfinished edge on purpose. Perfection in imperfection, made by hand.', piece:'Warrior Soul · Hand chains & rings'},
-  {t:30, n:'V · The light',   h:'From darkness,<br><em>light.</em>', p:'A rejected diamond, reborn through heat and pressure until it turns black. Set with conscious stones. A reminder, not a trophy.', piece:'The Black Diamond signature'},
-  {t:46, n:'Warrior Soul',    h:'Come home<br><em>to self.</em>', p:'', piece:''}
+/* ============ EDIT ME ============ */
+const CONTACT={name:'Jordi',title:'Partnerships',email:'partnership@sallyskoufis.com'};
+/* ================================= */
+
+/* ---------- WORLD DATA ----------
+   z: distance into the world (px). x/y: offset as fraction of viewport. w: width as fraction of viewport width (min px). */
+const WORLDS=[
+ {name:'Australian icon', bg:'#0b0b0c', card:{k:'01 · Australian icon', h:'One of Australia’s most <em>recognised</em> jewellery houses.', p:'Sculptural, handmade, instantly recognisable. More than a decade with MYER, Australia’s largest department store — proven sell-through, season after season.'},
+   pics:[['sally.jpg',-.30,-.12,.22,-700],['w/designer.jpg',.31,.16,.20,-350],['w/styled-1.jpg',-.27,.22,.16,250],['p/edge-gold.jpg',.30,-.22,.13,450]]},
+ {name:'Runway', bg:'#0c0b0a', card:{k:'02 · Runway', h:'Opened shows in <em>New York</em> &amp; <em>Paris</em>.', p:'Several seasons opening at New York and Paris Fashion Week, with OC Fashion Week California and Mercedes-Benz Fashion Week Sydney. Seen in Vogue Paris.'},
+   pics:[['w/nyfw-1.jpg',-.30,-.08,.2,-800],['w/run-1.jpg',.30,-.2,.26,-550],['w/run-2.jpg',-.33,.2,.16,-250],['w/vogue.jpg',.28,.24,.24,100],['w/run-3.jpg',-.28,-.24,.16,380],['w/run-4.jpg',.31,.0,.24,560],['w/nyfw-2.jpg',0,.30,.14,700]]},
+ {name:'Worn in culture', bg:'#0b0a0c', card:{k:'03 · Worn in culture', h:'Worn by icons.<br><em>Discovered by a new generation.</em>', names:'Rihanna · Naomi Campbell · Kylie Minogue<br>Kelly Rowland · Rosie Huntington-Whiteley · Kehlani · Emma Myers · Bella Poarch'},
+   pics:[['w/c-rihanna.jpg',-.31,-.14,.18,-650,'Rihanna'],['w/c-naomi.jpg',.31,-.1,.18,-400,'Naomi Campbell'],['w/c-kylie.jpg',-.28,.2,.13,200,'Kylie Minogue'],['w/c-kehlani.jpg',.29,.22,.17,450,'Kehlani']]},
+ {name:'Iconic bestsellers', bg:'#d9d8d4', light:1, card:{k:'04 · Iconic bestsellers', h:'The pieces people mean <em>when they say our name.</em>', p:'The Edge Ear Cuff — our #1 piece in the US — and the Destiny, Hybrid and Suspension climbers. Sculptural, no piercing needed, instantly recognisable online.'},
+   pics:[['p/edge-gold.jpg',-.30,-.1,.16,-700,'Edge Ear Cuff · US #1'],['p/destiny-black.jpg',.30,-.18,.15,-450,'Black Destiny'],['w/ear-1.jpg',-.29,.2,.2,-150],['p/hybrid-gold.jpg',.29,.2,.15,250,'Hybrid Climber · #1 climber US'],['p/suspension.jpg',-.3,-.22,.15,520,'Suspension Solitaire']]},
+ {name:'Handmade', bg:'#0d0b09', card:{k:'05 · Handmade', h:'Set by hand. <em>Finished over days.</em>', p:'Every piece is made by master artisans in Thailand, the home of stone-setting artistry — techniques passed down over generations, with days devoted to a single finish.'},
+   pics:[['w/artisan-1.jpg',-.29,-.12,.2,-650],['w/artisan-2.jpg',.29,.08,.2,-300],['p/vigour.jpg',-.27,.2,.14,250],['w/nyfw-3.jpg',.3,-.24,.15,480]]},
+ {name:'Conscious', bg:'#090c0b', card:{k:'06 · Conscious luxury', h:'Buy less. <em>Choose better.</em>', p:'Ethically sourced precious and semi-precious stones, man-made gemstones and solid silver. Black diamonds valued for their natural inclusions. Made to be treasured — for the conscious consumer, not the trend cycle.'},
+   pics:[['p/edge-black.jpg',-.29,-.14,.14,-600,'Black diamonds'],['p/vigour.jpg',.3,.12,.15,-300,'Black diamond &amp; labradorite'],['p/destiny-black.jpg',-.28,.2,.13,300]]},
+ {name:'Already in America', bg:'#0b0b0c', card:{k:'07 · Existing market', h:'Not emerging. <em>Already in America.</em>', nums:[['#2','US market by sales'],['A$193K','US net sales · 12 mo'],['66K','US visitors · 12 mo'],['+79%','2026 vs all of 2025']]},
+   pics:[['w/run-5.jpg',-.31,-.2,.2,-600],['w/c-kehlani.jpg',.31,.2,.15,-350],['p/edge-gold.jpg',.3,-.22,.12,400]]},
+ {name:'Warrior Soul', bg:'#05080b', card:{k:'08 · Warrior Soul', h:'And the soul <em>of the house.</em>', p:'Our statement collection — black diamonds, headpieces, armour for the spirit. Where the brand goes deepest.'},
+   pics:[['@film',0,-.02,.62,-500],['w/nyfw-1.jpg',-.33,.22,.13,250],['w/nyfw-3.jpg',.33,-.22,.13,400]]},
+ {name:'Partner with us', bg:'#0a0a0b', final:1, card:{k:'For marketplace partners', h:'Ready for <em>your marketplace.</em>', p:'Connected through Mirakl Connect. Curated and allocated by us. Proven to sell.'}, pics:[]}
 ];
-/* =================== */
+const GAP=2600, CARD_AHEAD=140;
 
-const v=document.getElementById('film'),chap=document.getElementById('chap'),line=document.getElementById('line'),
-  fill=line.querySelector('.fill'),knob=line.querySelector('.knob'),bPlay=document.getElementById('bPlay'),
-  end=document.getElementById('end'),room=document.getElementById('room');
-let cur=-1,dragging=false,wasPlaying=false,started=false;
-
-CHAPTERS.forEach(c=>{if(c.t>0){const k=document.createElement('div');k.className='tick';k.style.left=(c.t/FILM_END*100)+'%';line.appendChild(k)}});
-
-function showChap(k){
-  if(k===cur)return;cur=k;const c=CHAPTERS[k];
-  chap.classList.remove('show');
-  setTimeout(()=>{chap.querySelector('.num').textContent=c.n;chap.querySelector('h2').innerHTML=c.h;
-    chap.querySelector('p').textContent=c.p;const pc=chap.querySelector('.piece');pc.textContent=c.piece;pc.style.display=c.piece?'inline-block':'none';
-    chap.classList.add('show')},350);
-}
-function chapAt(t){let k=0;CHAPTERS.forEach((c,i)=>{if(t>=c.t)k=i});return k}
-function paint(){
-  const p=Math.min(v.currentTime/FILM_END,1);fill.style.width=(p*100)+'%';knob.style.left=(p*100)+'%';
-  showChap(chapAt(v.currentTime));
-  if(v.currentTime>=FILM_END&&!dragging&&!end.classList.contains('show')&&!document.body.classList.contains('inroom')){v.pause();finish()}
-  requestAnimationFrame(paint);
-}
-function finish(){document.body.classList.add('ended');end.classList.add('show');countUp(end);chap.classList.remove('show');bPlay.textContent='Play'}
-function play(){document.body.classList.remove('ended');end.classList.remove('show');if(v.currentTime>=FILM_END)v.currentTime=0;v.play().catch(()=>{});bPlay.textContent='Pause'}
-function pause(){v.pause();bPlay.textContent='Play'}
-function replay(){document.body.classList.remove('inroom');loopFrom=null;room.classList.remove('show');v.currentTime=0;cur=-1;play()}
-
-document.getElementById('enter').onclick=()=>{
-  document.getElementById('splash').classList.add('gone');document.body.classList.add('on');
-  v.currentTime=0;play();if(!started){started=true;requestAnimationFrame(paint)}
-};
-bPlay.onclick=()=>v.paused?play():pause();
-document.getElementById('bReplay').onclick=replay;
-document.getElementById('again').onclick=replay;
-document.getElementById('skip').onclick=()=>{pause();openRoom(0)};
-document.getElementById('toRoom').onclick=()=>openRoom(0);
-document.getElementById('backFilm').onclick=()=>{document.body.classList.remove('inroom');room.classList.remove('show');loopFrom=null;v.pause();v.currentTime=FILM_END;finish()};
-
-/* drag the light line */
-function seekFrom(e){const r=line.getBoundingClientRect();const x=Math.max(0,Math.min(1,(e.clientX-r.left)/r.width));v.currentTime=x*FILM_END*0.999;end.classList.remove('show')}
-line.addEventListener('pointerdown',e=>{dragging=true;wasPlaying=!v.paused;v.pause();line.setPointerCapture(e.pointerId);seekFrom(e)});
-line.addEventListener('pointermove',e=>{if(dragging)seekFrom(e)});
-line.addEventListener('pointerup',()=>{dragging=false;if(wasPlaying||v.currentTime<FILM_END-0.2)play()});
-line.addEventListener('keydown',e=>{if(e.key==='ArrowRight')v.currentTime=Math.min(FILM_END-0.1,v.currentTime+3);if(e.key==='ArrowLeft')v.currentTime=Math.max(0,v.currentTime-3)});
-
-/* tap film to pause / play; swipe to jump chapters */
-let sx=null,st=0;
-document.addEventListener('pointerdown',e=>{if(e.target.closest('#hud,#end,#room,#splash,#skip'))return;sx=e.clientX;st=Date.now()});
-document.addEventListener('pointerup',e=>{
-  if(sx===null)return;const dx=e.clientX-sx;sx=null;
-  if(Math.abs(dx)>60){const k=chapAt(v.currentTime)+(dx<0?1:-1);if(k>=0&&k<CHAPTERS.length){v.currentTime=CHAPTERS[k].t+0.05;play()}}
-  else if(Date.now()-st<400){v.paused?play():pause()}
+/* ---------- BUILD ---------- */
+const space=document.getElementById('space'), idx=document.getElementById('idx'), items=[];
+WORLDS.forEach((w,i)=>{
+  const z0=i*GAP;
+  // card
+  const c=document.createElement('div');c.className='it wcard';
+  let h=`<div class="k">${w.card.k}</div><h2>${w.card.h}</h2>`;
+  if(w.card.p)h+=`<p>${w.card.p}</p>`;
+  if(w.card.names)h+=`<div class="names">${w.card.names}</div>`;
+  if(w.card.nums)h+=`<div class="nums">${w.card.nums.map(n=>`<div><b>${n[0]}</b><span>${n[1]}</span></div>`).join('')}</div>`;
+  if(w.final)h+=`<button class="go" type="button" id="goRoom">Enter the partner room →</button>`;
+  c.innerHTML=h;space.appendChild(c);
+  items.push({el:c,z:z0,x:0,y:0,card:1,world:i});
+  w.pics.forEach(p=>{
+    const e=document.createElement('div');e.className='it pic';
+    if(p[0]==='@film'){e.innerHTML='<video src="film.mp4" muted playsinline loop preload="none"></video>';}
+    else e.innerHTML=`<img src="${p[0]}" alt="" loading="lazy">`+(p[5]?`<span class="lbl">${p[5]}</span>`:'');
+    space.appendChild(e);
+    items.push({el:e,z:z0+p[4],x:p[1],y:p[2],w:p[3],world:i,vid:p[0]==='@film'});
+  });
+  const li=document.createElement('li');li.innerHTML=`<i></i><span>${w.name}</span>`;li.onclick=()=>goWorld(i);idx.appendChild(li);
 });
+const lis=[...idx.children];
+const STOPS=WORLDS.map((w,i)=>i*GAP-CARD_AHEAD), MAXZ=STOPS[STOPS.length-1];
+
+/* ---------- CAMERA ---------- */
+let cam=STOPS[0]-1400, target=STOPS[0], lastInput=0, running=false, curWorld=-1;
+function goWorld(i){target=STOPS[Math.max(0,Math.min(STOPS.length-1,i))];lastInput=performance.now()-400}
+function nearest(z){let b=0;STOPS.forEach((s,i)=>{if(Math.abs(s-z)<Math.abs(STOPS[b]-z))b=i});return b}
+function frame(now){
+  // gentle settle to nearest world when the visitor pauses
+  if(now-lastInput>650){const n=STOPS[nearest(target)];target+= (n-target)*0.06}
+  target=Math.max(STOPS[0]-200,Math.min(MAXZ+120,target));
+  cam+=(target-cam)*0.085;
+  const W=innerWidth,H=innerHeight;
+  for(const it of items){
+    const d=it.z-cam; // distance ahead of camera
+    let o;
+    if(it.card){o=d<CARD_AHEAD-260||d>CARD_AHEAD+1300?0:1-Math.min(1,Math.abs(d-CARD_AHEAD)/(d<CARD_AHEAD?260:1300));o=Math.max(0,Math.min(1,o*1.6))}
+    else{o= d< -40?0 : d<160? (d+40)/200 : d>2600?0 : d>1700? 1-(d-1700)/900 : 1}
+    if(o<=0.001){if(it.el.style.display!=='none')it.el.style.display='none';if(it.vid&&it.v&&!it.v.paused)it.v.pause();continue}
+    it.el.style.display='block';
+    const wpx=it.card?null:Math.max(150,(it.w||.2)*W);
+    if(wpx)it.el.style.width=wpx+'px';
+    const sx=W<760?1.15:1.3, tx=Math.max(-.44,Math.min(.44,it.x*sx))*W, ty=it.y*H*(W<760?1.25:1.1);
+    it.el.style.transform=`translate3d(calc(-50% + ${tx}px),calc(-50% + ${ty}px),${-d}px)`;
+    it.el.style.opacity=o;it.el.style.zIndex=Math.round(20000-d);
+    if(it.vid){it.v=it.v||it.el.querySelector('video');if(it.v.paused)it.v.play().catch(()=>{})}
+  }
+  // active world + background
+  const wi=nearest(cam);
+  if(wi!==curWorld){curWorld=wi;lis.forEach((l,k)=>l.classList.toggle('on',k===wi));document.documentElement.style.setProperty('--bg',WORLDS[wi].bg);document.body.classList.toggle('lightw',!!WORLDS[wi].light)}
+  document.querySelector('#depth .bar i').style.width=Math.max(0,Math.min(100,(cam-STOPS[0])/(MAXZ-STOPS[0])*100))+'%';
+  if(running)requestAnimationFrame(frame);
+}
+
+/* ---------- INPUT (visitor controls the pace) ---------- */
+function push(dz){target+=dz;lastInput=performance.now()}
+space.addEventListener('wheel',e=>{e.preventDefault();push((e.deltaMode===1?e.deltaY*40:e.deltaY)*1.6)},{passive:false});
+let ty=null,tLast=0;
+space.addEventListener('pointerdown',e=>{ty=e.clientY;tLast=e.clientY;space.setPointerCapture(e.pointerId)});
+space.addEventListener('pointermove',e=>{if(ty===null)return;push((tLast-e.clientY)*4.2);tLast=e.clientY});
+space.addEventListener('pointerup',()=>{ty=null});
 document.addEventListener('keydown',e=>{
-  if(!document.body.classList.contains('on')){if(e.key==='Enter'||e.key===' ')document.getElementById('enter').click();return}
-  if(room.classList.contains('show')){if(e.key==='ArrowRight')goTab(tab+1);if(e.key==='ArrowLeft')goTab(tab-1);if(e.key==='Escape')document.getElementById('backFilm').click();return}
-  if(e.key===' '){e.preventDefault();v.paused?play():pause()}
-  if(e.key.toLowerCase()==='r')replay();
+  if(!document.body.classList.contains('diving')||document.body.classList.contains('inroom'))return;
+  if(['ArrowDown','PageDown',' '].includes(e.key)){e.preventDefault();goWorld(nearest(target)+1)}
+  if(['ArrowUp','PageUp'].includes(e.key)){e.preventDefault();goWorld(nearest(target)-1)}
+  if(e.key==='End')goWorld(STOPS.length-1);if(e.key==='Home')goWorld(0);
 });
-document.addEventListener('visibilitychange',()=>{if(document.hidden)pause()});
 
-/* buyer room tabs */
+/* ---------- ENTER ---------- */
+document.getElementById('enter').onclick=()=>{
+  document.getElementById('splash').classList.add('gone');document.body.classList.add('diving');
+  if(!running){running=true;requestAnimationFrame(frame)}
+};
+document.getElementById('toRoom2').onclick=()=>openRoom(0);
+document.addEventListener('click',e=>{if(e.target.id==='goRoom')openRoom(0)});
+
+/* ---------- PART 2 (partner room) ---------- */
+const v=document.getElementById('film'), room=document.getElementById('room');
+const ROOM_FILM={'US sales':38,'US audience':32,'Bestsellers':22,'The collections':14,'The founder':2,'How it works':24,'Contact':44};
+let loopFrom=null;
+function roomFilm(name){const t=ROOM_FILM[name];if(t==null)return;loopFrom=t;try{v.currentTime=t}catch(e){}v.play().catch(()=>{})}
+v.addEventListener('timeupdate',()=>{if(loopFrom!=null&&v.currentTime>loopFrom+7)v.currentTime=loopFrom});
+function countUp(root){root.querySelectorAll('.kpis b').forEach(el=>{
+  if(!el.dataset.final)el.dataset.final=el.textContent;const f=el.dataset.final,m=f.match(/[\d.,]+/);if(!m)return;
+  const num=parseFloat(m[0].replace(/,/g,'')),pre=f.slice(0,m.index),post=f.slice(m.index+m[0].length),dec=(m[0].split('.')[1]||'').length,t0=performance.now();
+  (function step(now){const k=Math.min((now-t0)/1200,1),e=1-Math.pow(1-k,3);let val=(num*e).toFixed(dec);if(m[0].includes(','))val=Number(val).toLocaleString('en-US');el.textContent=pre+val+post;if(k<1)requestAnimationFrame(step);else el.textContent=f})(t0)})}
 const panes=[...document.querySelectorAll('.pane')],tabs=document.getElementById('tabs');let tab=0;
 panes.forEach((p,i)=>{const b=document.createElement('button');b.type='button';b.textContent=p.dataset.tab;b.onclick=()=>goTab(i);tabs.appendChild(b)});
 const tb=[...tabs.children];
 function goTab(i){if(i<0||i>=panes.length)return;tab=i;roomFilm(panes[i].dataset.tab);countUp(panes[i]);panes.forEach((p,n)=>p.classList.toggle('on',n===i));tb.forEach((b,n)=>b.classList.toggle('on',n===i));
   document.getElementById('rPrev').disabled=i===0;document.getElementById('rNext').disabled=i===panes.length-1;tb[i].scrollIntoView({inline:'center',block:'nearest'})}
-function openRoom(i){document.body.classList.add('inroom');end.classList.remove('show');room.classList.add('show');goTab(i)}
+function openRoom(i){document.body.classList.add('inroom');room.classList.add('show');goTab(i)}
+document.getElementById('backFilm').onclick=()=>{document.body.classList.remove('inroom');room.classList.remove('show');loopFrom=null;v.pause()};
 document.getElementById('rPrev').onclick=()=>goTab(tab-1);
 document.getElementById('rNext').onclick=()=>goTab(tab+1);
 let rx=null;room.addEventListener('touchstart',e=>{rx=e.touches[0].clientX},{passive:true});
 room.addEventListener('touchend',e=>{if(rx===null)return;const dx=e.changedTouches[0].clientX-rx;if(Math.abs(dx)>60)goTab(tab+(dx<0?1:-1));rx=null});
+document.addEventListener('keydown',e=>{if(!room.classList.contains('show'))return;if(e.key==='ArrowRight')goTab(tab+1);if(e.key==='ArrowLeft')goTab(tab-1);if(e.key==='Escape')document.getElementById('backFilm').click()});
+if(CONTACT.email){document.getElementById('who').innerHTML=CONTACT.name+'<small>'+CONTACT.title+'</small>';document.getElementById('mail').textContent=CONTACT.email;
+  document.getElementById('mailBtn').href='mailto:'+CONTACT.email+'?subject='+encodeURIComponent('SALLY SKOUFIS™ — marketplace partnership')}
 
-
-/* film behind the buyer room — a different moment per tab */
-const ROOM_FILM={'US sales':38,'US audience':32,'Bestsellers':22,'The collections':14,'The founder':2,'Start here':40,'Working with us':24,'Contact':44};
-let loopFrom=null;
-function roomFilm(name){const t=ROOM_FILM[name];if(t==null)return;loopFrom=t;v.currentTime=t;v.play().catch(()=>{})}
-v.addEventListener('timeupdate',()=>{if(document.body.classList.contains('inroom')&&loopFrom!=null&&v.currentTime>loopFrom+7)v.currentTime=loopFrom});
-/* count-up */
-function countUp(root){root.querySelectorAll('.kpis b,.fact b').forEach(el=>{
-  if(!el.dataset.final)el.dataset.final=el.textContent;const f=el.dataset.final,m=f.match(/[\d.,]+/);if(!m)return;
-  const num=parseFloat(m[0].replace(/,/g,'')),pre=f.slice(0,m.index),post=f.slice(m.index+m[0].length),dec=(m[0].split('.')[1]||'').length,t0=performance.now();
-  (function step(now){const k=Math.min((now-t0)/1200,1),e=1-Math.pow(1-k,3);let val=(num*e).toFixed(dec);if(m[0].includes(','))val=Number(val).toLocaleString('en-US');el.textContent=pre+val+post;if(k<1)requestAnimationFrame(step);else el.textContent=f})(t0)})}
-
-/* contact */
-if(CONTACT.email){
-  document.getElementById('who').innerHTML=CONTACT.name+'<small>'+CONTACT.title+'</small>';
-  document.getElementById('mail').textContent=CONTACT.email;
-  document.getElementById('mailBtn').href='mailto:'+CONTACT.email+'?subject='+encodeURIComponent('SALLY SKOUFIS™ — partnership call');
-}else{document.getElementById('mailBtn').href='https://sallyskoufis.com'}
-
-/* splash ripple — touch the water */
+/* ---------- SPLASH RIPPLE — touch the water ---------- */
 (function(){const c=document.getElementById('ripple'),x=c.getContext('2d'),sp=document.getElementById('splash');let w,h,d=[],dpr=Math.min(devicePixelRatio||1,2);
   function sz(){w=c.width=innerWidth*dpr;h=c.height=innerHeight*dpr}sz();addEventListener('resize',sz);
   const add=(px,py,a)=>d.push({x:px*dpr,y:py*dpr,r:0,a:a||.45});
