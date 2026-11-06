@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>SALLY SKOUFIS™ — For marketplace partners</title>
+<title>SALLY SKOUFIS™ — Worn, not shown.</title>
 <meta name="description" content="SALLY SKOUFIS™ — Australian sculptural accessible-luxury jewellery. Runway, handmade, conscious. Already selling in America.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="SALLY SKOUFIS™ — Worn, not shown.">
-<meta property="og:description" content="An Australian icon. Runway-proven, handmade, conscious — and already selling in America. Explore the worlds.">
+<meta property="og:description" content="An Australian icon. Runway-proven, handmade, conscious — and already selling in America. Explore the archive.">
 <meta property="og:image" content="/og.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -189,59 +189,77 @@ body.inroom #hud,body.inroom #brand,body.inroom #skip{opacity:0!important;pointe
 @keyframes breathe{from{transform:scale(1.06)}to{transform:scale(1.14)}}
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
-body.lightw .wcard h2{color:#0a0a0b;text-shadow:none}body.lightw .wcard .k,body.lightw .wcard p{color:#3a3a3e;text-shadow:none}
-body.lightw .it .lbl{color:#3a3a3e}body.lightw #idx li{color:rgba(10,10,11,.4)}body.lightw #idx li.on{color:#0a0a0b}
-body.lightw #mark,body.lightw #toRoom2,body.lightw #depth .hint{color:#0a0a0b}body.lightw #depth .bar{background:rgba(10,10,11,.2)}body.lightw #depth .bar i{background:#0a0a0b}
-body.lightw .it img{box-shadow:0 20px 50px rgba(0,0,0,.18)}
+.grid6.six{grid-template-columns:repeat(3,1fr)}
+.ladder.three{grid-template-columns:repeat(3,1fr);margin-top:1.4rem}
+@media (max-width:820px){.grid6.six{grid-template-columns:1fr 1fr}.ladder.three{grid-template-columns:1fr}}
 
-/* ================= WORLDS ================= */
-:root{--bg:#0a0a0b}
-html,body{background:var(--bg);transition:background-color 1.2s ease}
-#film{opacity:0;transition:opacity .8s}
-body.inroom #film{opacity:1}
-#grade{opacity:0}
-body.inroom #grade{opacity:1}
-#space{position:fixed;inset:0;perspective:900px;perspective-origin:50% 50%;overflow:hidden;touch-action:none;cursor:grab}
-#space:active{cursor:grabbing}
-.it{position:absolute;left:50%;top:50%;will-change:transform,opacity;opacity:0;pointer-events:none;backface-visibility:hidden}
-.it img,.it video{display:block;width:100%;height:auto;box-shadow:0 30px 80px rgba(0,0,0,.45)}
-.it.pic{border-radius:1px}
-.it.cap{pointer-events:none}
-.it .lbl{position:absolute;left:0;bottom:-1.6rem;font-size:.56rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mist);white-space:nowrap}
-.wcard{width:min(88vw,900px);text-align:center;padding:3rem 2rem}
-.wcard::before{content:"";position:absolute;inset:-12% -8%;background:radial-gradient(ellipse at center,rgba(5,5,6,.72) 0%,rgba(5,5,6,.45) 45%,rgba(5,5,6,0) 72%);z-index:-1;pointer-events:none}
-body.lightw .wcard::before{background:radial-gradient(ellipse at center,rgba(217,216,212,.9) 0%,rgba(217,216,212,.6) 45%,rgba(217,216,212,0) 72%)}
-.wcard .k{font-size:.62rem;letter-spacing:.46em;text-transform:uppercase;color:var(--mist);margin-bottom:1.2rem}
-.wcard h2{font-family:var(--serif);font-weight:300;font-size:clamp(2.6rem,6.8vw,5.8rem);line-height:1.02;color:#fff;text-shadow:0 4px 40px rgba(0,0,0,.6)}
-.wcard h2 em{font-style:italic}
-.wcard p{margin:1.3rem auto 0;max-width:32em;font-size:clamp(.92rem,1.5vw,1.06rem);line-height:1.7;color:var(--mist);text-shadow:0 2px 20px rgba(0,0,0,.8)}
-.wcard .names{font-family:var(--serif);font-style:italic;font-size:clamp(1.1rem,2.4vw,1.6rem);line-height:1.6;color:#fff;margin-top:1.2rem}
-.wcard .nums{display:flex;justify-content:center;gap:clamp(1.4rem,5vw,4rem);margin-top:1.8rem;flex-wrap:wrap}
-.wcard .nums b{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(2rem,4.6vw,3.6rem);line-height:1;color:#fff}
-.wcard .nums span{display:block;margin-top:.5rem;font-size:.56rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mist)}
-.wcard .go{pointer-events:auto;margin-top:2.2rem;display:inline-block;font-size:.66rem;letter-spacing:.4em;text-transform:uppercase;padding:1.1rem 2.4rem 1.1rem 2.8rem;background:var(--bone);color:var(--void);border:0;cursor:pointer}
-.wcard .go:hover{background:#fff}
-/* chrome */
-#idx{position:fixed;left:clamp(1rem,3vw,2.4rem);top:50%;transform:translateY(-50%);z-index:12;list-style:none;opacity:0;transition:opacity 1s}
-body.diving #idx{opacity:1}
-#idx li{display:flex;align-items:center;gap:.8rem;padding:.42rem 0;cursor:pointer;font-size:.56rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(242,242,240,.4);transition:color .4s}
-#idx li i{display:block;width:14px;height:1px;background:currentColor;transition:width .4s}
-#idx li.on{color:#fff}#idx li.on i{width:34px}
-#idx li:hover{color:var(--bone)}
-@media (max-width:760px){#idx li span{display:none}#idx{left:.8rem}}
-#mark{position:fixed;top:calc(1.4rem + var(--safe-t));left:0;right:0;text-align:center;z-index:12;font-family:var(--serif);letter-spacing:.38em;padding-left:.38em;font-size:.82rem;opacity:0;transition:opacity 1s;pointer-events:none}
-body.diving #mark{opacity:.95}
-#toRoom2{position:fixed;top:calc(1.2rem + var(--safe-t));right:clamp(1rem,3vw,2rem);z-index:13;font-size:.56rem;letter-spacing:.32em;text-transform:uppercase;color:var(--mist);padding:.5rem;opacity:0;transition:opacity 1s}
-body.diving #toRoom2{opacity:1}
-#toRoom2:hover{color:#fff}
-#depth{position:fixed;left:50%;bottom:calc(1.4rem + var(--safe-b));transform:translateX(-50%);z-index:12;width:min(60vw,420px);opacity:0;transition:opacity 1s;text-align:center}
-body.diving #depth{opacity:1}
-#depth .bar{height:1px;background:rgba(242,242,240,.18);position:relative}
-#depth .bar i{position:absolute;left:0;top:0;bottom:0;background:var(--bone);width:0}
-#depth .hint{margin-top:.8rem;font-size:.54rem;letter-spacing:.32em;text-transform:uppercase;color:rgba(242,242,240,.5)}
-body.inroom #space{opacity:0;pointer-events:none;transition:opacity .6s}
-body.inroom #idx,body.inroom #mark,body.inroom #toRoom2,body.inroom #depth{opacity:0!important;pointer-events:none}
-@media (max-width:640px){#mark{text-align:left;left:3.2rem;padding-left:0;letter-spacing:.28em;font-size:.7rem}}
+/* ================= ARCHIVE (Part 1) ================= */
+html,body{overflow:hidden}
+#film{opacity:0;transition:opacity .8s}body.inroom #film{opacity:1}
+#grade{opacity:0}body.inroom #grade{opacity:1}
+#arch{position:fixed;inset:0;overflow-y:auto;overflow-x:hidden;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;opacity:0;visibility:hidden;transition:opacity 1.2s,visibility 1.2s}
+body.on #arch{opacity:1;visibility:visible}
+body.inroom #arch{opacity:0;visibility:hidden}
+#arch::-webkit-scrollbar{width:6px}#arch::-webkit-scrollbar-thumb{background:rgba(242,242,240,.2)}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:6rem 1.4rem 4rem;position:relative}
+.hero .k{font-size:.62rem;letter-spacing:.46em;text-transform:uppercase;color:var(--mist);margin-bottom:1.6rem}
+.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(3.2rem,10vw,8.4rem);line-height:.95;color:#fff}
+.hero h1 em{font-style:italic}
+.hero .stats{margin-top:2rem;font-size:.64rem;letter-spacing:.34em;text-transform:uppercase;color:var(--bone);line-height:2.1}
+.hero .stats i{font-style:normal;color:var(--stone);margin:0 .7em}
+.hero p{margin-top:1.4rem;max-width:36em;font-size:clamp(.92rem,1.5vw,1.06rem);line-height:1.7;color:var(--mist)}
+.hero .begin{position:absolute;bottom:2.2rem;left:50%;transform:translateX(-50%);font-size:.58rem;letter-spacing:.38em;text-transform:uppercase;color:var(--mist);cursor:pointer;background:none;border:0}
+.hero .begin::after{content:"";display:block;width:1px;height:38px;background:linear-gradient(var(--bone),transparent);margin:.9rem auto 0;animation:drip 2.2s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.22;z-index:-1;filter:grayscale(.4)}
+.bar{position:sticky;top:0;z-index:20;background:rgba(10,10,11,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:1rem clamp(1rem,4vw,3rem);display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap}
+.bar .m{font-family:var(--serif);letter-spacing:.34em;font-size:.82rem;margin-right:auto}
+.chips{display:flex;gap:.45rem;flex-wrap:wrap}
+.chips button{font-size:.56rem;letter-spacing:.26em;text-transform:uppercase;color:var(--mist);border:1px solid var(--line);padding:.55rem .9rem;border-radius:99px;transition:all .3s}
+.chips button.on,.chips button:hover{background:var(--bone);color:var(--void);border-color:var(--bone)}
+.bar .room{font-size:.58rem;letter-spacing:.32em;text-transform:uppercase;padding:.7rem 1.2rem;background:var(--bone);color:var(--void)}
+@media (max-width:760px){.bar{gap:.7rem}.bar .m{display:none}.chips{flex-wrap:nowrap;overflow-x:auto;width:100%;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chips button{white-space:nowrap}.bar .room{display:none}}
+.count{padding:1.6rem clamp(1rem,4vw,3rem) .4rem;font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:var(--stone)}
+.grid{columns:4 260px;column-gap:14px;padding:1rem clamp(1rem,4vw,3rem) 2rem}
+.tile{break-inside:avoid;margin-bottom:14px;position:relative;cursor:zoom-in;overflow:hidden;background:#141416;opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.tile.in{opacity:1;transform:none}
+.tile.hide{display:none}
+.tile img,.tile video{display:block;width:100%;height:auto;transition:transform 1.2s cubic-bezier(.2,.8,.2,1),filter .6s}
+.tile:hover img,.tile:hover video{transform:scale(1.04)}
+.tile .cap{position:absolute;left:0;right:0;bottom:0;padding:2.4rem .9rem .8rem;background:linear-gradient(0deg,rgba(10,10,11,.85),rgba(10,10,11,0));opacity:0;transition:opacity .4s}
+.tile:hover .cap{opacity:1}
+@media (hover:none){.tile .cap{opacity:1}}
+.cap b{display:block;font-family:var(--serif);font-weight:400;font-size:1.05rem;color:#fff}
+.cap span{display:block;margin-top:.25rem;font-size:.54rem;letter-spacing:.26em;text-transform:uppercase;color:var(--mist)}
+.tile.txt{cursor:default;background:var(--ink);padding:2rem 1.5rem;border:1px solid var(--line)}
+.tile.txt .k{font-size:.56rem;letter-spacing:.32em;text-transform:uppercase;color:var(--stone);margin-bottom:1rem}
+.tile.txt h3{font-family:var(--serif);font-weight:300;font-size:clamp(1.6rem,2.4vw,2.1rem);line-height:1.08;color:#fff}
+.tile.txt h3 em{font-style:italic}
+.tile.txt p{margin-top:.9rem;font-size:.84rem;line-height:1.65;color:var(--mist)}
+.tile.txt .nums{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.2rem}
+.tile.txt .nums b{display:block;font-family:var(--serif);font-weight:300;font-size:1.8rem;color:#fff;line-height:1}
+.tile.txt .nums span{display:block;margin-top:.35rem;font-size:.52rem;letter-spacing:.22em;text-transform:uppercase;color:var(--stone)}
+.tile.light{background:#e8e7e3}.tile.light .cap{background:linear-gradient(0deg,rgba(232,231,227,.95),rgba(232,231,227,0))}.tile.light .cap b{color:#0a0a0b}.tile.light .cap span{color:#555}
+.outro{text-align:center;padding:5rem 1.4rem 7rem;border-top:1px solid var(--line)}
+.outro .k{font-size:.6rem;letter-spacing:.44em;text-transform:uppercase;color:var(--stone)}
+.outro h2{font-family:var(--serif);font-weight:300;font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.04;margin:1.2rem 0 1rem;color:#fff}
+.outro h2 em{font-style:italic}
+.outro p{color:var(--mist);font-size:1rem;line-height:1.7}
+.outro .go{margin-top:2.2rem;font-size:.66rem;letter-spacing:.4em;text-transform:uppercase;padding:1.1rem 2.4rem 1.1rem 2.8rem;background:var(--bone);color:var(--void)}
+/* lightbox */
+#lb{position:fixed;inset:0;z-index:35;background:rgba(6,6,7,.94);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:clamp(1.2rem,3vw,3rem);align-items:center;padding:clamp(1rem,4vw,3.5rem);opacity:0;visibility:hidden;transition:opacity .5s,visibility .5s}
+#lb.show{opacity:1;visibility:visible}
+#lb .ph{height:calc(100svh - 7rem);display:flex;align-items:center;justify-content:center}
+#lb .ph img,#lb .ph video{max-width:100%;max-height:100%;object-fit:contain}
+#lb .k{font-size:.58rem;letter-spacing:.34em;text-transform:uppercase;color:var(--stone)}
+#lb h3{font-family:var(--serif);font-weight:300;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.08;margin:.9rem 0;color:#fff}
+#lb p{font-size:.95rem;line-height:1.7;color:var(--mist)}
+#lb .nav{display:flex;gap:1.4rem;margin-top:2rem}
+#lb .nav button,#lb .x{font-size:.58rem;letter-spacing:.32em;text-transform:uppercase;color:var(--mist)}
+#lb .x{position:absolute;top:1.2rem;right:1.4rem}
+@media (max-width:760px){#lb{grid-template-columns:1fr;align-content:center}#lb .ph{height:55svh}#lb h3{font-size:1.6rem}}
+body.inroom #room{z-index:40}
+
 #splash .hint2{position:absolute;bottom:calc(2rem + var(--safe-b));font-size:.6rem;letter-spacing:.32em;text-transform:uppercase;color:var(--stone)}
 </style>
 </head>
@@ -261,18 +279,66 @@ body.inroom #idx,body.inroom #mark,body.inroom #toRoom2,body.inroom #depth{opaci
   <div class="hint2">Touch the water · Explore at your own pace</div>
 </section>
 
-<!-- WORLDS -->
-<div id="space" aria-label="Explore the worlds of SALLY SKOUFIS"></div>
-<ul id="idx"></ul>
-<div id="mark">SALLY SKOUFIS™</div>
-<button id="toRoom2" type="button">Partner room →</button>
-<div id="depth"><div class="bar"><i></i></div><div class="hint">Scroll · swipe · arrow keys — your pace</div></div>
+<!-- PART 1 · ARCHIVE -->
+<main id="arch">
+  <section class="hero">
+    <video src="film.mp4" muted playsinline loop preload="none" id="heroVid"></video>
+    <div class="k">SALLY SKOUFIS™ · Australian icon · Accessible luxury</div>
+    <h1>Worn, not <em>shown.</em></h1>
+    <div class="stats">A decade with MYER<i>/</i>New York &amp; Paris Fashion Week<i>/</i>US is our #2 market</div>
+    <p>Sculptural, handmade, consciously made jewellery — proven in retail, worn in culture, and already selling in America. Explore the archive.</p>
+    <button class="begin" type="button" id="begin">Scroll to begin</button>
+  </section>
+  <div class="bar" id="bar">
+    <span class="m">SALLY SKOUFIS™</span>
+    <div class="chips" id="chips"></div>
+    <button class="room" type="button" id="toRoomBar">Partner room →</button>
+  </div>
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+  <section class="outro">
+    <div class="k">For marketplace partners</div>
+    <h2>Ready for <em>your marketplace.</em></h2>
+    <p>Connected through Mirakl Connect. Curated and allocated by us. Proven to sell.</p>
+    <button class="go" type="button" id="goRoom">Enter the partner room →</button>
+  </section>
+</main>
+<div id="lb" aria-modal="true" role="dialog"><button class="x" type="button" id="lbX">Close ✕</button><div class="ph" id="lbPh"></div><div><div class="k" id="lbK"></div><h3 id="lbH"></h3><p id="lbP"></p><div class="nav"><button type="button" id="lbPrev">← Prev</button><button type="button" id="lbNext">Next →</button></div></div></div>
 
 <!-- PART 2 -->
 <section id="room" aria-label="For buyers">
-  <header><span class="m">SALLY SKOUFIS™</span><button id="backFilm" type="button">← The worlds</button></header>
+  <header><span class="m">SALLY SKOUFIS™</span><button id="backFilm" type="button">← The archive</button></header>
   <nav id="tabs"></nav>
   <div id="panes">
+
+    <div class="pane" data-tab="Why now">
+      <div class="split">
+        <div>
+          <div class="kick">The category</div>
+          <h3>The line between fine and fashion <em>is dissolving.</em></h3>
+          <p class="bio">Today's customer wants the design, craftsmanship and emotional weight of fine jewellery — without its price barriers. SALLY SKOUFIS™ has operated at this intersection for years. Not chasing accessible luxury; helping define it.</p>
+          <div class="kpis">
+            <div><b>11.6%</b><span>Global demi-fine jewellery growth a year, 2025–2030</span></div>
+            <div><b>11.8%</b><span>US demi-fine growth a year — faster than global</span></div>
+          </div>
+          <div class="src">Source: Grand View Research, Demi-fine Jewelry Market Report, 2025–2030 forecast</div>
+        </div>
+        <div class="img" style="background-image:url(w/run-2.jpg);background-position:center 20%"></div>
+      </div>
+    </div>
+
+    <div class="pane" data-tab="Why us">
+      <div class="kick">For your marketplace</div>
+      <h3>Why <em>SALLY SKOUFIS™.</em></h3>
+      <div class="grid6 six">
+        <div><i>01</i><b>Distinctive design</b><span>A sculptural point of view in a category of near-identical plated chains.</span></div>
+        <div><i>02</i><b>Proven retail</b><span>More than a decade of sell-through with MYER.</span></div>
+        <div><i>03</i><b>Hero products</b><span>The Edge Ear Cuff and family — recognised, repeat-purchased.</span></div>
+        <div><i>04</i><b>Accessible luxury</b><span>Fine-jewellery feel between fashion and fine pricing.</span></div>
+        <div><i>05</i><b>Cultural relevance</b><span>Runway pedigree and a new generation of wearers.</span></div>
+        <div><i>06</i><b>E-commerce ready</b><span>Products that communicate instantly online — and data that syncs via API.</span></div>
+      </div>
+    </div>
 
     <div class="pane" data-tab="US sales">
       <div class="split">
@@ -325,6 +391,35 @@ body.inroom #idx,body.inroom #mark,body.inroom #toRoom2,body.inroom #depth{opaci
       <h3>The pieces people mean <em>when they say our name.</em></h3>
       <div class="cards"><a class="card" href="https://sallyskoufis.com/products/edge-ear-cuff-qbt203u0101m02000000" target="_blank" rel="noopener"><div class="ph"><img alt="Edge Ear Cuff — White diamonds · 18K gold vermeil" src="p/edge-gold.jpg" onerror="this.remove()"></div><h4>Edge Ear Cuff</h4><em>White diamonds · 18K gold vermeil</em><small>#1 piece in the US</small><small class="p">RRP US$140</small></a><a class="card" href="https://sallyskoufis.com/products/destiny-ear-cuff-qbt103u0103m01000000" target="_blank" rel="noopener"><div class="ph"><img alt="Black Destiny — Black diamonds · black rhodium" src="p/destiny-black.jpg" onerror="this.remove()"></div><h4>Black Destiny</h4><em>Black diamonds · black rhodium</em><small>Best-selling Destiny · most units sold</small><small class="p">RRP US$100</small></a><a class="card" href="https://sallyskoufis.com/products/hybrid-climber" target="_blank" rel="noopener"><div class="ph"><img alt="Hybrid Climber — White diamonds · 18K gold" src="p/hybrid-gold.jpg" onerror="this.remove()"></div><h4>Hybrid Climber</h4><em>White diamonds · 18K gold</em><small>#1 ear climber in the US</small><small class="p">RRP US$390</small></a><a class="card" href="https://sallyskoufis.com/products/suspension-solitaire-climber" target="_blank" rel="noopener"><div class="ph"><img alt="Suspension Solitaire Climber — Sterling silver · UNCONTAINED" src="p/suspension.jpg" onerror="this.remove()"></div><h4>Suspension Solitaire Climber</h4><em>Sterling silver · UNCONTAINED</em><small>New · already selling in 10 countries</small><small class="p">RRP US$260</small></a><a class="card" href="https://sallyskoufis.com/products/edge-ear-cuff-qbt203u0103m01000000" target="_blank" rel="noopener"><div class="ph"><img alt="Edge Ear Cuff — Black diamonds · black rhodium" src="p/edge-black.jpg" onerror="this.remove()"></div><h4>Edge Ear Cuff</h4><em>Black diamonds · black rhodium</em><small>The Black Diamond signature</small><small class="p">RRP US$140</small></a></div>
       <div class="src">Source: Shopify, US net sales Nov 2024 – Nov 2026 · tap any piece to see it on <a href="https://sallyskoufis.com" target="_blank" rel="noopener">sallyskoufis.com</a></div>
+    </div>
+
+    <div class="pane" data-tab="Why it sells">
+      <div class="kick">Product characteristics, translated into marketplace value</div>
+      <h3>Why it <em>sells.</em></h3>
+      <div class="grid6 six">
+        <div><i>01</i><b>Immediate recognition</b><span>Distinctive silhouettes that own the thumbnail and stop the scroll.</span></div>
+        <div><i>02</i><b>Strong digital presentation</b><span>Sculptural forms photograph with high visual impact.</span></div>
+        <div><i>03</i><b>Easy product story</b><span>No piercing, instant understanding — low-friction discovery.</span></div>
+        <div><i>04</i><b>Collection-building</b><span>Ear styling invites multiple pieces per customer.</span></div>
+        <div><i>05</i><b>Cross-sell &amp; repeat</b><span>Signatures lead the shopper into the wider range.</span></div>
+        <div><i>06</i><b>Giftable &amp; ownable</b><span>Recognisable design with genuine gifting potential.</span></div>
+      </div>
+    </div>
+
+    <div class="pane" data-tab="The customer">
+      <div class="split">
+        <div>
+          <div class="kick">The customer</div>
+          <h3>She wears it <em>as identity.</em></h3>
+          <p class="bio">Fashion-led and design-literate, she buys jewellery as self-expression and personal power — and increasingly, as a conscious choice: buy less, choose better.</p>
+          <div class="ladder three">
+            <div><b>Aspirational entry</b><span>Discovers the brand through an accessible hero piece — the Edge Ear Cuff.</span></div>
+            <div><b>Core contemporary</b><span>Returns for signatures and newness; builds a collection.</span></div>
+            <div><b>Collector</b><span>Invests in elevated, statement and Warrior Soul pieces.</span></div>
+          </div>
+        </div>
+        <div class="img" style="background-image:url(w/styled-1.jpg);background-position:center 30%"></div>
+      </div>
     </div>
 
     <div class="pane" data-tab="The collections">
@@ -412,110 +507,77 @@ body.inroom #idx,body.inroom #mark,body.inroom #toRoom2,body.inroom #depth{opaci
 const CONTACT={name:'Jordi',title:'Partnerships',email:'partnership@sallyskoufis.com'};
 /* ================================= */
 
-/* ---------- WORLD DATA ----------
-   z: distance into the world (px). x/y: offset as fraction of viewport. w: width as fraction of viewport width (min px). */
-const WORLDS=[
- {name:'Australian icon', bg:'#0b0b0c', card:{k:'01 · Australian icon', h:'One of Australia’s most <em>recognised</em> jewellery houses.', p:'Sculptural, handmade, instantly recognisable. More than a decade with MYER, Australia’s largest department store — proven sell-through, season after season.'},
-   pics:[['sally.jpg',-.30,-.12,.22,-700],['w/designer.jpg',.31,.16,.20,-350],['w/styled-1.jpg',-.27,.22,.16,250],['p/edge-gold.jpg',.30,-.22,.13,450]]},
- {name:'Runway', bg:'#0c0b0a', card:{k:'02 · Runway', h:'Opened shows in <em>New York</em> &amp; <em>Paris</em>.', p:'Several seasons opening at New York and Paris Fashion Week, with OC Fashion Week California and Mercedes-Benz Fashion Week Sydney. Seen in Vogue Paris.'},
-   pics:[['w/nyfw-1.jpg',-.30,-.08,.2,-800],['w/run-1.jpg',.30,-.2,.26,-550],['w/run-2.jpg',-.33,.2,.16,-250],['w/vogue.jpg',.28,.24,.24,100],['w/run-3.jpg',-.28,-.24,.16,380],['w/run-4.jpg',.31,.0,.24,560],['w/nyfw-2.jpg',0,.30,.14,700]]},
- {name:'Worn in culture', bg:'#0b0a0c', card:{k:'03 · Worn in culture', h:'Worn by icons.<br><em>Discovered by a new generation.</em>', names:'Rihanna · Naomi Campbell · Kylie Minogue<br>Kelly Rowland · Rosie Huntington-Whiteley · Kehlani · Emma Myers · Bella Poarch'},
-   pics:[['w/c-rihanna.jpg',-.31,-.14,.18,-650,'Rihanna'],['w/c-naomi.jpg',.31,-.1,.18,-400,'Naomi Campbell'],['w/c-kylie.jpg',-.28,.2,.13,200,'Kylie Minogue'],['w/c-kehlani.jpg',.29,.22,.17,450,'Kehlani']]},
- {name:'Iconic bestsellers', bg:'#d9d8d4', light:1, card:{k:'04 · Iconic bestsellers', h:'The pieces people mean <em>when they say our name.</em>', p:'The Edge Ear Cuff — our #1 piece in the US — and the Destiny, Hybrid and Suspension climbers. Sculptural, no piercing needed, instantly recognisable online.'},
-   pics:[['p/edge-gold.jpg',-.30,-.1,.16,-700,'Edge Ear Cuff · US #1'],['p/destiny-black.jpg',.30,-.18,.15,-450,'Black Destiny'],['w/ear-1.jpg',-.29,.2,.2,-150],['p/hybrid-gold.jpg',.29,.2,.15,250,'Hybrid Climber · #1 climber US'],['p/suspension.jpg',-.3,-.22,.15,520,'Suspension Solitaire']]},
- {name:'Handmade', bg:'#0d0b09', card:{k:'05 · Handmade', h:'Set by hand. <em>Finished over days.</em>', p:'Every piece is made by master artisans in Thailand, the home of stone-setting artistry — techniques passed down over generations, with days devoted to a single finish.'},
-   pics:[['w/artisan-1.jpg',-.29,-.12,.2,-650],['w/artisan-2.jpg',.29,.08,.2,-300],['p/vigour.jpg',-.27,.2,.14,250],['w/nyfw-3.jpg',.3,-.24,.15,480]]},
- {name:'Conscious', bg:'#090c0b', card:{k:'06 · Conscious luxury', h:'Buy less. <em>Choose better.</em>', p:'Ethically sourced precious and semi-precious stones, man-made gemstones and solid silver. Black diamonds valued for their natural inclusions. Made to be treasured — for the conscious consumer, not the trend cycle.'},
-   pics:[['p/edge-black.jpg',-.29,-.14,.14,-600,'Black diamonds'],['p/vigour.jpg',.3,.12,.15,-300,'Black diamond &amp; labradorite'],['p/destiny-black.jpg',-.28,.2,.13,300]]},
- {name:'Already in America', bg:'#0b0b0c', card:{k:'07 · Existing market', h:'Not emerging. <em>Already in America.</em>', nums:[['#2','US market by sales'],['A$193K','US net sales · 12 mo'],['66K','US visitors · 12 mo'],['+79%','2026 vs all of 2025']]},
-   pics:[['w/run-5.jpg',-.31,-.2,.2,-600],['w/c-kehlani.jpg',.31,.2,.15,-350],['p/edge-gold.jpg',.3,-.22,.12,400]]},
- {name:'Warrior Soul', bg:'#05080b', card:{k:'08 · Warrior Soul', h:'And the soul <em>of the house.</em>', p:'Our statement collection — black diamonds, headpieces, armour for the spirit. Where the brand goes deepest.'},
-   pics:[['@film',0,-.02,.62,-500],['w/nyfw-1.jpg',-.33,.22,.13,250],['w/nyfw-3.jpg',.33,-.22,.13,400]]},
- {name:'Partner with us', bg:'#0a0a0b', final:1, card:{k:'For marketplace partners', h:'Ready for <em>your marketplace.</em>', p:'Connected through Mirakl Connect. Curated and allocated by us. Proven to sell.'}, pics:[]}
+/* ---------- ARCHIVE DATA ----------
+   type: 'img' | 'txt' | 'film'. tag = filter chip. h/p = what shows when opened. */
+const TAGS=['All','Australian icon','Runway','Worn in culture','Iconic','Handmade','Conscious','America','Warrior Soul'];
+const TILES=[
+ {type:'txt',tag:'Australian icon',k:'Australian icon',h:'One of Australia’s most <em>recognised</em> jewellery houses.',p:'More than a decade with MYER, Australia’s largest department store — proven sell-through, season after season.'},
+ {src:'w/nyfw-1.jpg',tag:'Runway',h:'New York Fashion Week',p:'SALLY SKOUFIS™ has opened several runway shows at New York and Paris Fashion Week.'},
+ {src:'p/edge-gold.jpg',tag:'Iconic',light:1,h:'Edge Ear Cuff',p:'Our #1 piece in the US. A sculptural, architectural form with the impact of multiple earrings — no piercing required.'},
+ {src:'w/c-naomi.jpg',tag:'Worn in culture',h:'Naomi Campbell',p:'Worn, commissioned and celebrated by icons — from Naomi Campbell and Rihanna to a new generation.'},
+ {src:'w/artisan-2.jpg',tag:'Handmade',h:'Set by hand',p:'Every piece is made by master artisans in Thailand, the home of stone-setting artistry, using techniques passed down over generations.'},
+ {src:'w/run-1.jpg',tag:'Runway',h:'On the runway',p:'Opened shows in New York and Paris, with OC Fashion Week California and Mercedes-Benz Fashion Week Sydney.'},
+ {type:'txt',tag:'America',k:'Existing market',h:'Not emerging. <em>Already in America.</em>',nums:[['#2','US market'],['A$193K','US net sales · 12 mo'],['66K','US visitors · 12 mo'],['+79%','2026 vs 2025']]},
+ {src:'w/c-rihanna.jpg',tag:'Worn in culture',h:'Rihanna',p:'Worn in culture — moving between high fashion and contemporary youth culture.'},
+ {src:'p/destiny-black.jpg',tag:'Iconic',light:1,h:'Black Destiny',p:'Our best-selling Destiny colourway and the most units sold in the US.'},
+ {src:'w/vogue.jpg',tag:'Runway',h:'Paris',p:'Several seasons at Paris Fashion Week.'},
+ {type:'txt',tag:'Conscious',k:'Conscious luxury',h:'Buy less. <em>Choose better.</em>',p:'Ethically sourced precious and semi-precious stones, man-made gemstones and solid silver. Made to be treasured, not replaced — for the conscious consumer.'},
+ {src:'w/ear-1.jpg',tag:'Iconic',h:'The ear, styled',p:'Ear cuffs, climbers and huggies that build a collection — and bring her back for the next piece.'},
+ {src:'sally.jpg',tag:'Australian icon',h:'Sally Skoufis',p:'Founder & designer. Designer, not influencer — every piece is designed by Sally and made by hand in her ateliers in Perth and Thailand.'},
+ {src:'w/run-2.jpg',tag:'Runway',h:'Runway',p:'A fashion pedigree behind every piece.'},
+ {src:'p/vigour.jpg',tag:'Conscious',light:1,h:'Black diamond & labradorite',p:'Black diamonds valued for their natural inclusions — formed over millions of years. Paired with energy stones.'},
+ {src:'w/c-kehlani.jpg',tag:'Worn in culture',h:'Kehlani',p:'Embraced by a new generation — Kehlani, Emma Myers, Bella Poarch.'},
+ {src:'w/artisan-1.jpg',tag:'Handmade',h:'Meticulously faceted',p:'Every jewel is individually produced; the polisher can devote days to a single finish.'},
+ {src:'p/hybrid-gold.jpg',tag:'Iconic',light:1,h:'Hybrid Climber',p:'Our #1 ear climber in the US.'},
+ {type:'film',tag:'Warrior Soul',h:'Warrior Soul',p:'Our statement collection — black diamonds, headpieces and armour for the spirit. Where the brand goes deepest.'},
+ {src:'w/run-3.jpg',tag:'Runway',h:'Runway',p:'Opened main stage at Mercedes-Benz Fashion Week Sydney.'},
+ {src:'w/c-kylie.jpg',tag:'Worn in culture',h:'Kylie Minogue',p:'Worn by Australian and global icons alike.'},
+ {type:'txt',tag:'Handmade',k:'Handmade',h:'Set by hand. <em>Finished over days.</em>',p:'Blending the old world with the new — preserving age-old techniques and the livelihoods of the artisans who keep them alive.'},
+ {src:'p/suspension.jpg',tag:'Iconic',h:'Suspension Solitaire Climber',p:'New from the UNCONTAINED collection — already selling in 10 countries.'},
+ {src:'w/nyfw-2.jpg',tag:'Warrior Soul',h:'Soul headpiece · NYFW',p:'Statement pieces born on the New York runway.'},
+ {src:'w/designer.jpg',tag:'Australian icon',h:'The designer at work',p:'Couture design process, accessible luxury price points.'},
+ {src:'w/run-4.jpg',tag:'Runway',h:'Paris',p:'On the runway in Paris.'},
+ {src:'p/edge-black.jpg',tag:'Conscious',light:1,h:'Edge Ear Cuff · black diamonds',p:'The black diamond signature, on our most iconic silhouette.'},
+ {src:'w/styled-1.jpg',tag:'America',h:'Worn every day',p:'Fashion-led, design-literate — she wears it as identity. US customers spend more: A$490 average order in 2026.'},
+ {src:'w/nyfw-3.jpg',tag:'Warrior Soul',h:'Warrior headpiece',p:'Armour for the spirit.'},
+ {src:'w/run-5.jpg',tag:'Runway',h:'Runway',p:'Leather and silver cuffs, made for the runway.'},
 ];
-const GAP=2600, CARD_AHEAD=140;
-
-/* ---------- BUILD ---------- */
-const space=document.getElementById('space'), idx=document.getElementById('idx'), items=[];
-WORLDS.forEach((w,i)=>{
-  const z0=i*GAP;
-  // card
-  const c=document.createElement('div');c.className='it wcard';
-  let h=`<div class="k">${w.card.k}</div><h2>${w.card.h}</h2>`;
-  if(w.card.p)h+=`<p>${w.card.p}</p>`;
-  if(w.card.names)h+=`<div class="names">${w.card.names}</div>`;
-  if(w.card.nums)h+=`<div class="nums">${w.card.nums.map(n=>`<div><b>${n[0]}</b><span>${n[1]}</span></div>`).join('')}</div>`;
-  if(w.final)h+=`<button class="go" type="button" id="goRoom">Enter the partner room →</button>`;
-  c.innerHTML=h;space.appendChild(c);
-  items.push({el:c,z:z0,x:0,y:0,card:1,world:i});
-  w.pics.forEach(p=>{
-    const e=document.createElement('div');e.className='it pic';
-    if(p[0]==='@film'){e.innerHTML='<video src="film.mp4" muted playsinline loop preload="none"></video>';}
-    else e.innerHTML=`<img src="${p[0]}" alt="" loading="lazy">`+(p[5]?`<span class="lbl">${p[5]}</span>`:'');
-    space.appendChild(e);
-    items.push({el:e,z:z0+p[4],x:p[1],y:p[2],w:p[3],world:i,vid:p[0]==='@film'});
-  });
-  const li=document.createElement('li');li.innerHTML=`<i></i><span>${w.name}</span>`;li.onclick=()=>goWorld(i);idx.appendChild(li);
+const grid=document.getElementById('grid'),chips=document.getElementById('chips'),count=document.getElementById('count'),arch=document.getElementById('arch');
+TILES.forEach((t,i)=>{
+  const d=document.createElement('div');d.className='tile'+(t.type==='txt'?' txt':'')+(t.light?' light':'');d.dataset.tag=t.tag;d.dataset.i=i;
+  if(t.type==='txt'){d.innerHTML=`<div class="k">${t.k}</div><h3>${t.h}</h3>`+(t.p?`<p>${t.p}</p>`:'')+(t.nums?`<div class="nums">${t.nums.map(n=>`<div><b>${n[0]}</b><span>${n[1]}</span></div>`).join('')}</div>`:'');}
+  else if(t.type==='film'){d.innerHTML=`<video src="film.mp4" muted playsinline loop preload="none" poster="poster.jpg"></video><div class="cap"><b>${t.h}</b><span>${t.tag}</span></div>`;}
+  else d.innerHTML=`<img src="${t.src}" alt="${t.h}" loading="lazy"><div class="cap"><b>${t.h}</b><span>${t.tag}</span></div>`;
+  if(t.type!=='txt')d.onclick=()=>openLb(i);
+  grid.appendChild(d);
 });
-const lis=[...idx.children];
-const STOPS=WORLDS.map((w,i)=>i*GAP-CARD_AHEAD), MAXZ=STOPS[STOPS.length-1];
-
-/* ---------- CAMERA ---------- */
-let cam=STOPS[0]-1400, target=STOPS[0], lastInput=0, running=false, curWorld=-1;
-function goWorld(i){target=STOPS[Math.max(0,Math.min(STOPS.length-1,i))];lastInput=performance.now()-400}
-function nearest(z){let b=0;STOPS.forEach((s,i)=>{if(Math.abs(s-z)<Math.abs(STOPS[b]-z))b=i});return b}
-function frame(now){
-  // gentle settle to nearest world when the visitor pauses
-  if(now-lastInput>650){const n=STOPS[nearest(target)];target+= (n-target)*0.06}
-  target=Math.max(STOPS[0]-200,Math.min(MAXZ+120,target));
-  cam+=(target-cam)*0.085;
-  const W=innerWidth,H=innerHeight;
-  for(const it of items){
-    const d=it.z-cam; // distance ahead of camera
-    let o;
-    if(it.card){o=d<CARD_AHEAD-260||d>CARD_AHEAD+1300?0:1-Math.min(1,Math.abs(d-CARD_AHEAD)/(d<CARD_AHEAD?260:1300));o=Math.max(0,Math.min(1,o*1.6))}
-    else{o= d< -40?0 : d<160? (d+40)/200 : d>2600?0 : d>1700? 1-(d-1700)/900 : 1}
-    if(o<=0.001){if(it.el.style.display!=='none')it.el.style.display='none';if(it.vid&&it.v&&!it.v.paused)it.v.pause();continue}
-    it.el.style.display='block';
-    const wpx=it.card?null:Math.max(150,(it.w||.2)*W);
-    if(wpx)it.el.style.width=wpx+'px';
-    const sx=W<760?1.15:1.3, tx=Math.max(-.44,Math.min(.44,it.x*sx))*W, ty=it.y*H*(W<760?1.25:1.1);
-    it.el.style.transform=`translate3d(calc(-50% + ${tx}px),calc(-50% + ${ty}px),${-d}px)`;
-    it.el.style.opacity=o;it.el.style.zIndex=Math.round(20000-d);
-    if(it.vid){it.v=it.v||it.el.querySelector('video');if(it.v.paused)it.v.play().catch(()=>{})}
-  }
-  // active world + background
-  const wi=nearest(cam);
-  if(wi!==curWorld){curWorld=wi;lis.forEach((l,k)=>l.classList.toggle('on',k===wi));document.documentElement.style.setProperty('--bg',WORLDS[wi].bg);document.body.classList.toggle('lightw',!!WORLDS[wi].light)}
-  document.querySelector('#depth .bar i').style.width=Math.max(0,Math.min(100,(cam-STOPS[0])/(MAXZ-STOPS[0])*100))+'%';
-  if(running)requestAnimationFrame(frame);
-}
-
-/* ---------- INPUT (visitor controls the pace) ---------- */
-function push(dz){target+=dz;lastInput=performance.now()}
-space.addEventListener('wheel',e=>{e.preventDefault();push((e.deltaMode===1?e.deltaY*40:e.deltaY)*1.6)},{passive:false});
-let ty=null,tLast=0;
-space.addEventListener('pointerdown',e=>{if(e.target.closest('.go'))return;ty=e.clientY;tLast=e.clientY;space.setPointerCapture(e.pointerId)});
-space.addEventListener('pointermove',e=>{if(ty===null)return;push((tLast-e.clientY)*4.2);tLast=e.clientY});
-space.addEventListener('pointerup',()=>{ty=null});
-document.addEventListener('keydown',e=>{
-  if(!document.body.classList.contains('diving')||document.body.classList.contains('inroom'))return;
-  if(['ArrowDown','PageDown',' '].includes(e.key)){e.preventDefault();goWorld(nearest(target)+1)}
-  if(['ArrowUp','PageUp'].includes(e.key)){e.preventDefault();goWorld(nearest(target)-1)}
-  if(e.key==='End')goWorld(STOPS.length-1);if(e.key==='Home')goWorld(0);
-});
-
-/* ---------- ENTER ---------- */
-document.getElementById('enter').onclick=()=>{
-  document.getElementById('splash').classList.add('gone');document.body.classList.add('diving');
-  if(!running){running=true;requestAnimationFrame(frame)}
-};
-document.getElementById('toRoom2').onclick=()=>openRoom(0);
-document.addEventListener('click',e=>{if(e.target.closest('#goRoom'))openRoom(0)});
+const tiles=[...grid.children];
+TAGS.forEach((g,i)=>{const b=document.createElement('button');b.type='button';b.textContent=g;if(!i)b.className='on';b.onclick=()=>filter(g,b);chips.appendChild(b)});
+function filter(g,b){[...chips.children].forEach(c=>c.classList.toggle('on',c===b));let n=0;tiles.forEach(t=>{const show=g==='All'||t.dataset.tag===g;t.classList.toggle('hide',!show);if(show)n++});count.textContent=(g==='All'?'The archive':g)+' · '+n+' pieces';document.getElementById('bar').scrollIntoView({behavior:'smooth'})}
+count.textContent='The archive · '+tiles.length+' pieces';
+/* reveal on scroll + play film tiles only when visible */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');const v=e.target.querySelector('video');if(v)v.play().catch(()=>{})}else{const v=e.target.querySelector('video');if(v)v.pause()}}),{root:arch,threshold:.12});
+tiles.forEach(t=>io.observe(t));
+/* lightbox */
+const lb=document.getElementById('lb'),media=TILES.map((t,i)=>i).filter(i=>TILES[i].type!=='txt');let li=0;
+function openLb(i){li=i;const t=TILES[i];document.getElementById('lbPh').innerHTML=t.type==='film'?'<video src="film.mp4" autoplay muted loop playsinline></video>':`<img src="${t.src}" alt="${t.h}">`;
+  document.getElementById('lbK').textContent=t.tag;document.getElementById('lbH').textContent=t.h;document.getElementById('lbP').textContent=t.p||'';lb.classList.add('show')}
+function stepLb(dx){const vis=media.filter(i=>!tiles[i].classList.contains('hide'));let k=vis.indexOf(li);k=(k+dx+vis.length)%vis.length;openLb(vis[k])}
+document.getElementById('lbX').onclick=()=>{lb.classList.remove('show');document.getElementById('lbPh').innerHTML=''};
+document.getElementById('lbPrev').onclick=()=>stepLb(-1);document.getElementById('lbNext').onclick=()=>stepLb(1);
+lb.addEventListener('click',e=>{if(e.target===lb)document.getElementById('lbX').click()});
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('show'))return;if(e.key==='Escape')document.getElementById('lbX').click();if(e.key==='ArrowRight')stepLb(1);if(e.key==='ArrowLeft')stepLb(-1)});
+let lx=null;lb.addEventListener('touchstart',e=>{lx=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',e=>{if(lx===null)return;const dx=e.changedTouches[0].clientX-lx;if(Math.abs(dx)>50)stepLb(dx<0?1:-1);lx=null});
+/* enter + navigation */
+document.getElementById('enter').onclick=()=>{document.getElementById('splash').classList.add('gone');document.body.classList.add('on');const hv=document.getElementById('heroVid');hv.play().catch(()=>{})};
+document.getElementById('begin').onclick=()=>document.getElementById('bar').scrollIntoView({behavior:'smooth'});
+document.getElementById('toRoomBar').onclick=()=>openRoom(0);
+document.getElementById('goRoom').onclick=()=>openRoom(0);
+document.addEventListener('keydown',e=>{if(!document.body.classList.contains('on')&&(e.key==='Enter'||e.key===' ')&&!document.getElementById('splash').classList.contains('gone')){e.preventDefault();document.getElementById('enter').click()}});
 
 /* ---------- PART 2 (partner room) ---------- */
 const v=document.getElementById('film'), room=document.getElementById('room');
-const ROOM_FILM={'US sales':38,'US audience':32,'Bestsellers':22,'The collections':14,'The founder':2,'How it works':24,'Contact':44};
+const ROOM_FILM={'Why now':40,'Why us':30,'US sales':38,'US audience':32,'Bestsellers':22,'Why it sells':26,'The customer':34,'The collections':14,'The founder':2,'How it works':24,'Contact':44};
 let loopFrom=null;
 function roomFilm(name){const t=ROOM_FILM[name];if(t==null)return;loopFrom=t;try{v.currentTime=t}catch(e){}v.play().catch(()=>{})}
 v.addEventListener('timeupdate',()=>{if(loopFrom!=null&&v.currentTime>loopFrom+7)v.currentTime=loopFrom});
