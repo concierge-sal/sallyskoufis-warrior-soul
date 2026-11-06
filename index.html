@@ -495,7 +495,7 @@ function frame(now){
 function push(dz){target+=dz;lastInput=performance.now()}
 space.addEventListener('wheel',e=>{e.preventDefault();push((e.deltaMode===1?e.deltaY*40:e.deltaY)*1.6)},{passive:false});
 let ty=null,tLast=0;
-space.addEventListener('pointerdown',e=>{ty=e.clientY;tLast=e.clientY;space.setPointerCapture(e.pointerId)});
+space.addEventListener('pointerdown',e=>{if(e.target.closest('.go'))return;ty=e.clientY;tLast=e.clientY;space.setPointerCapture(e.pointerId)});
 space.addEventListener('pointermove',e=>{if(ty===null)return;push((tLast-e.clientY)*4.2);tLast=e.clientY});
 space.addEventListener('pointerup',()=>{ty=null});
 document.addEventListener('keydown',e=>{
@@ -511,7 +511,7 @@ document.getElementById('enter').onclick=()=>{
   if(!running){running=true;requestAnimationFrame(frame)}
 };
 document.getElementById('toRoom2').onclick=()=>openRoom(0);
-document.addEventListener('click',e=>{if(e.target.id==='goRoom')openRoom(0)});
+document.addEventListener('click',e=>{if(e.target.closest('#goRoom'))openRoom(0)});
 
 /* ---------- PART 2 (partner room) ---------- */
 const v=document.getElementById('film'), room=document.getElementById('room');
