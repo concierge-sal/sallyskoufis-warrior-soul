@@ -414,7 +414,8 @@ let rx=null;room.addEventListener('touchstart',e=>{rx=e.touches[0].clientX},{pas
 room.addEventListener('touchend',e=>{if(rx===null)return;const dx=e.changedTouches[0].clientX-rx;if(Math.abs(dx)>60)goTab(tab+(dx<0?1:-1));rx=null});
 document.addEventListener('keydown',e=>{if(!room.classList.contains('show'))return;if(e.key==='ArrowRight')goTab(tab+1);if(e.key==='ArrowLeft')goTab(tab-1);if(e.key==='Escape')document.getElementById('backFilm').click()});
 if(CONTACT.email){document.getElementById('who').innerHTML=CONTACT.name+'<small>'+CONTACT.title+'</small>';document.getElementById('mail').textContent=CONTACT.email;
-  document.getElementById('mailBtn').href='mailto:'+CONTACT.email+'?subject='+encodeURIComponent('SALLY SKOUFIS™ — marketplace partnership')}
+  const m=document.getElementById('mail');m.innerHTML='<a href="mailto:'+CONTACT.email+'" style="color:inherit">'+CONTACT.email+'</a>';}
+document.getElementById('mailBtn').addEventListener('click',()=>{try{navigator.clipboard.writeText(CONTACT.email)}catch(e){}const c=document.getElementById('copied');c.style.opacity=1;setTimeout(()=>c.style.opacity=0,6000)});
 
 /* ---------- SPLASH RIPPLE — touch the water ---------- */
 (function(){const c=document.getElementById('ripple'),x=c.getContext('2d'),sp=document.getElementById('splash');let w,h,d=[],dpr=Math.min(devicePixelRatio||1,2);
